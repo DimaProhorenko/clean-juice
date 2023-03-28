@@ -1,0 +1,144 @@
+@use '../abstracts/' as abs;
+
+.hero {
+    padding-top: 6rem;
+    @include abs.flex(center, center, column);
+    position: relative;
+    overflow: hidden;
+
+    &__wrapper {
+        max-width: fit-content;
+
+        & > * + * {
+            margin-block-start: 3em;
+        }
+    }
+
+    &__row {
+        width: 100%;
+        @include abs.flex;
+    }
+
+    &__title {
+        flex: 1;
+        text-align: center;
+        font-size: abs.toRem(200);
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        font-size: abs.toRem(24);
+        font-weight: 500;
+        color: abs.$clr-text2;
+    }
+
+    &__counter {
+        font-size: abs.toRem(35);
+
+        span {
+            font-size: 1rem;
+            color: abs.$clr-text2;
+        }
+    }
+
+    &__info {
+        max-width: abs.toRem(250);
+    }
+
+    &__heading {
+        font-weight: 400;
+        font-size: abs.toRem(26);
+        margin-block-end: .6em;
+    }
+
+    &__description {
+        font-size: .8rem;
+        color: abs.$clr-text2;
+    }
+
+    &__juice {
+        @include abs.absolute-center;
+        max-width: abs.toRem(240);
+        // animation: float 2s ease-in-out infinite alternate;
+        z-index: 2;
+
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+
+    &__leaves {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 3;
+
+        ul {
+            height: 100%;
+        }
+    }
+
+    .leaf {
+        position: absolute;
+
+        &--1 {
+            top: 7rem !important;
+            left: 20% !important;
+        }
+
+        &--2 {
+            top: 60% !important;
+            left: 10rem !important;
+        }
+
+        &--3 {
+            top: 25% !important;
+            left: 80% !important;
+        }
+
+        &--4 {
+            top: 80% !important;
+            left: 70% !important;
+        }
+
+        &--5 {
+            top: 70% !important;
+            left: 48% !important;
+        }
+
+            // &--1 {
+            //     top: 7rem !important;
+            //     left: 15% !important;
+            // }
+
+            // &--2 {
+            //     bottom: 15% !important;
+            //     left: 26% !important;
+            // }
+
+            // &--3 {
+            //     top: 9rem !important;
+            //     right: 5rem !important;
+            // }
+
+            // &--4 {
+            //     top: 60% !important;
+            //     right: 30% !important;
+            // }
+
+            // &--5 {
+            //     bottom: 1rem !important;
+            //     left: 50% !important;
+            // }
+    }
+}
+
+@keyframes float {
+    
+
+    to {
+        translate: -50% calc(-50% - 20px);
+    }
+}

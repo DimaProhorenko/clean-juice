@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Clean Juice</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <a href="/" class="logo" aria-label="Home page">Clean Juice</a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__li">
+              <a href="#" class="header__link">locations</a>
+            </li>
+            <li class="header__li">
+              <a href="#" class="header__link">our menu</a>
+            </li>
+            <li class="header__li">
+              <a href="#" class="header__link">our story</a>
+            </li>
+            <li class="header__li">
+              <a href="#" class="header__link">our team</a>
+            </li>
+            <li class="header__li">
+              <a href="#" class="header__link">own a clean juice</a>
+            </li>
+            <li class="header__li">
+              <a href="#" class="header__link">contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__right">
+          <i class="fa-solid fa-search header__search"></i>
+          <a href="#" class="header__link">My account</a>
+          <i class="fa-solid fa-shopping-cart header__icon header__cart"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__juice">
+        <img src="./assets/img/juice.png" alt="" data-depth=".5" />
+      </div>
+
+      <div class="hero__leaves">
+        <ul id="scene">
+          <li class="leaf leaf--1" data-depth="-.1">
+            <img src="./assets/img/leaf01.png" alt="" />
+          </li>
+          <li class="leaf leaf--2" data-depth="-.3">
+            <img src="./assets/img/leaf02.png" alt="" />
+          </li>
+          <li class="leaf leaf--3" data-depth="-1.5">
+            <img src="./assets/img/leaf03.png" alt="" />
+          </li>
+          <li class="leaf leaf--4" data-depth=".1">
+            <img src="./assets/img/leaf04.png" alt="" />
+          </li>
+          <li class="leaf leaf--5" data-depth=".3">
+            <img src="./assets/img/leaf05.png" alt="" />
+          </li>
+        </ul>
+      </div>
+      <div class="wrapper wrapper--sm hero__wrapper">
+        <div class="hero__row hero__row--top">
+          <h2 class="hero__subtitle">Find your clean juice</h2>
+          <h2 class="hero__counter">2<span>/21</span></h2>
+        </div>
+        <div class="hero__row">
+          <h1 class="hero__title">orange</h1>
+        </div>
+        <div class="hero__row">
+          <a href="#" class="btn">Show all the juices</a>
+          <div class="hero__info">
+            <h3 class="hero__heading">
+              Your <span class="accent">healthy</span> life starts here with us
+            </h3>
+            <p class="hero__description">
+              A family owned company founded with the purpose of giving your
+              family access to clean, organic products while you are on the go.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

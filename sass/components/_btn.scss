@@ -1,0 +1,20 @@
+@use '../abstracts/' as abs;
+
+%btn {
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: .5em 1em;
+    border-radius: 1em;
+}
+
+.btn {
+    @extend %btn;
+    @include abs.transition(filter);
+
+    &:hover {
+        filter: invert(1);
+    }
+}

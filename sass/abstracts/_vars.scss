@@ -1,0 +1,18 @@
+@use './functions' as f;
+
+$clr-secondary: #AECD31;
+$clr-text: #000;
+$clr-text2: #555;
+$ff-regular: 'Montserrat';
+
+//bp
+$bp-phone: f.toRem(599);
+$bp-tablet: f.toRem(720);
+$bp-desktop: f.toRem(1000);
+
+// Transitions
+$duration: 300ms;
+$timing: ease-in-out;
+
+$max-width: f.toRem(1220);
+$max-width-sm: f.toRem(920);

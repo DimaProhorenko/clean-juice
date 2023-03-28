@@ -1,0 +1,29 @@
+@use '../abstracts/' as abs;
+
+.header {
+    @include abs.fixed(top 0 left 0);
+    width: 100%;
+    padding-block: 1em;
+
+    &__wrapper {
+        @include abs.flex;
+    }
+
+    &__list,
+    &__right {
+        @include abs.flex;
+        gap: 1em;
+    }
+
+    &__link {
+        text-transform: capitalize;
+
+        &:hover {
+            text-decoration: line-through;
+        }
+    }
+
+    &__icon {
+        font-size: .9rem;
+    }
+}

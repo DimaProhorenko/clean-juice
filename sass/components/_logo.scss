@@ -1,0 +1,6 @@
+@use '../abstracts/' as abs;
+
+.logo {
+    font-size: abs.toRem(40);
+    text-transform: uppercase;
+}

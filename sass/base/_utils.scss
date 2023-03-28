@@ -1,0 +1,15 @@
+@use '../abstracts/' as abs;
+
+.wrapper {
+    width: 90%;
+    max-width: abs.$max-width;
+    margin-inline: auto;
+
+    &--sm {
+        max-width: abs.$max-width-sm;
+    }
+}
+
+.accent {
+    color: abs.$clr-secondary;
+}
